@@ -112,10 +112,10 @@ ul {
 }
 
 #word-mark {
-  width: 500px;
-  height: 55px;
-  border-radius: 90px;
-  margin-left: 20px;
+  width: 26.042vw;
+  height: 2.865vw;
+  border-radius: 4.688vw;
+  margin-left: 1.042vw;
   opacity: 1;
   transition: all 0.3s;
 }
@@ -123,21 +123,21 @@ ul {
 /*** Menu Styles ***/
 #menu {
   justify-content: flex-end;
-  padding-right: 40px;
+  padding-right: 2.083vw;
 }
   
 li {
   margin-left: 20px;
 }
 li a {
-  width: 150px;
-  height: 55px;
+  width: 7.813vw;
+  height: 2.865vw;
   display: block;
-  border-radius: 90px;
+  border-radius: 4.688vw;
 }
 
 #hero-section {
-margin-top: 110px;
+margin-top: 5.729vw;
 background-image: url("img/header.png");
 }
 
