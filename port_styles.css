@@ -120,15 +120,15 @@ ul {
   transition: all 0.3s;
 }
 
-#word-mark p:nth-child(2) {
+#word-mark a:nth-child(2) {
   display: none;
 }
 
 @media (max-width: 767px) {
-  #word-mark p:nth-child(1) {
+  #word-mark a:nth-child(1) {
     display: none;
   }
-  #word-mark p:nth-child(2) {
+  #word-mark a:nth-child(2) {
     display: block;
   }
 }
