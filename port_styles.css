@@ -153,13 +153,15 @@ li a {
 
 #hero-section {
 margin-top: 5.729vw;
-background-image: url("img/header.png");
+background-image: url("https://res.cloudinary.com/dtxb76tmn/image/upload/v1715792677/header_hdudsa.png");
+background-size: contain;
 }
 
 
 #faded-circle {
   background-image: url("img/background.png");
   background-color: #1c1c1c;
+	
 }
 
 #bright-circle {
