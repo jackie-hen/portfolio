@@ -28,7 +28,7 @@ hr {
 
 h1{
     color: white;
-    font-family: "Avenir";
+    font-family: Avenir, Helvetica, sans-serif;
     letter-spacing: 0.417vw;
     line-height: 1.8;
     
@@ -46,7 +46,7 @@ h2{
 
 h3{
   color: white;
-  font-family: 'Avenir', sans-serif;
+  font-family: Avenir, Helvetica, sans-serif;
   line-height: 2.5;
   opacity: 0.8;
   font-size: 90%;
@@ -329,7 +329,7 @@ section {
     margin:1% 0%;
     padding:0.6% 0%;
     color: var(--bright-color);
-    font-family: "Avenir";
+    font-family: Avenir, Helvetica, sans-serif;
     letter-spacing: 8px;
     line-height: 1.8;
 
@@ -531,7 +531,7 @@ section {
     padding: 8px 10px 8px 10px;
       line-height: 3;
       transition: all 0.3s ease;
-      font-family: "Avenir";
+      font-family: Avenir, Helvetica, sans-serif;
   }
   .gallery .gallery-filter .filter-item.active{
       color: white;
@@ -653,7 +653,7 @@ section {
     left: 50%;
     transform: translate(-50%, 0%);
     color: white;
-    font-family: "Avenir";
+    font-family: Avenir, Helvetica, sans-serif;
     padding-top: 3%;
 }
 
