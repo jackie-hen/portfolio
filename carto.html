@@ -58,28 +58,50 @@
     </nav>
     </header>
 
-<!--first section-->
-    <div class="hero-section" style="background-image: url('https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725755269/impossible_background_agze9a.png');">
-    
-    </div>
 
-    <div id="scroll_down">
-        <p> SCROLL</p>
-    </div> 
+<!--first section-->
+
+<div id="faded-circle" class="hero-section">
+  <div class="columns">
+    <div class="column small">
+    <h1 style="float: right;">CARTO</h1>
+    <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769248/sculpt_zttdci.png" alt="plants">
+    </div>
+    <div class="column big">
+        <h2>
+            The goal of this project was to design an app that simplifies navigation for people using public transit, 
+		both online and offline. Many metro and transit maps are notoriously difficult to interpret, especially 
+		when navigating complex routes or in areas with limited connectivity. My app aims to connect different 
+		versions of a public transit map, providing a clear and intuitive way for users to understand their route 
+		and navigate potential obstacles, like train delays or station closures.
+        </h2> 
+    </div>
+</div>
+</div>
+
+
+<div id="scroll_down">
+    <p> SCROLL</p>
+</div>
 
   
 <!--Biography-->
 <div id="faded-circle" class="hero-section">
   <div class="columns">
     <div class="column small">
-    <h1 style="float: right;">THE PROJECT</h1>
+    <h1 style="float: right;">Research & Discovery</h1>
     <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753187/Screenshot_2024-04-25_at_14.15.27_zdanh2.png" alt="gym wall with pictograms">
     </div>
     <div class="column big">   
-            <h2> The Impossible Pictogram is a popular NYU Abu Dhabi design project from Professor Goffredo Puccetti's Wayfinding course: 
-              imagine an impossible solution to real design issues and design a plausible non verbal pictogram. <br>
+            <h2> 
+User Research: I began the project by interviewing frequent public transit users to understand the pain points they faced when using traditional 
+		    metro maps and navigation tools. The majority of users expressed frustration with the difficulty of interpreting complex, 
+		    static maps—especially in stressful situations like navigating transfers or during service disruptions. Key insights included confusion 
+		    around map legends, unclear transfer points, and difficulty when trying to navigate offline.
 
-		My proposal is still visible in the NYUAD Fitness Center. Though the platform has not been fixed, my pictograms continue to perplex gymgoers everyday.
+Competitive Analysis: I analyzed existing transit apps (e.g., Google Maps, Citymapper, local metro apps) to identify areas for improvement. 
+		    While many apps offered basic routing, they often lacked visual clarity and flexibility for offline use. My focus was on 
+		    creating an app that integrated various views and versions of transit maps to cater to different user needs in real-time and in areas with poor connectivity.
             </h2>	
     </div>
 </div>
@@ -88,24 +110,103 @@
  
 
 
-<!--Biography-->
+<!--requirements-->
 <div id="faded-circle" class="hero-section">
   <div class="columns">
     <div class="column small">
-    <h1 style="float: right;">THE PROBLEM</h1>
+    <h1 style="float: right;">DEFINING REQUIREMENTS</h1>
     <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753194/IMG_9191_dyygcb.jpg" alt="damaged gym wall">
     </div>
     <div class="column big">   
-            <p> In the NYUAD Fitness Center, the deadlifting platforms sit nearly flush against a privacy wall. On several occasions, weightlifters have lost their balance and smashed through the wall, resulting in severe damage and a temporary shutdown of the platform. The school is clearly willing to
-spend resources to repair the area, but has never fixed the problem at hand:
-the placement of the platform itself. In a space that is meant to support strength training, this wall puts an unnecessary expectation on weightlifters to keep the gym safe.
+            <p> User Personas & Scenarios: Based on user feedback, I created two personas to capture the needs of different transit riders. For example:
+
+Persona 1: Alex, a daily commuter who needs to quickly navigate to work without delay.
+Persona 2: Maria, a tourist unfamiliar with the city's transit system who needs clear, easy-to-understand directions.
+Each persona's scenarios focused on understanding their pain points: how to easily find their route, interpret the map, and manage unexpected obstacles.
+
+Information Architecture: I mapped out the app’s information architecture, ensuring that it catered to users both online and offline. The core features included:
+
+A dynamic, zoomable transit map that connects multiple views (station-level, route-level, city-wide).
+Real-time updates about service interruptions, delays, or station closures.
+Offline map functionality, where users could still access key route information without needing an active internet connection.
             </p>	
     </div>
 </div>
 </div>
 
 
+<!--UX research-->
+<div id="faded-circle" class="hero-section">
+  <div class="columns">
+    <div class="column small">
+    <h1 style="float: right;">Usability Testing</h1>
+    <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753187/Screenshot_2024-04-25_at_14.15.27_zdanh2.png" alt="gym wall with pictograms">
+    </div>
+    <div class="column big">   
+            <h2> 
+Usability Testing: I conducted several rounds of task-based usability testing with public transit users to identify how well the app met user needs. Key tests focused on:
 
+Route comprehension: Was it clear where users should go next?
+Offline functionality: Could users still navigate smoothly when there was no data connection?
+Clarity of alerts: Were service interruptions communicated effectively?
+Feedback indicated that users appreciated the simplicity of the map, but some struggled with the offline navigation when maps weren’t fully downloaded. 
+		    Based on this, I iterated on the design by introducing a download manager to ensure users could save their route maps ahead of time.
+            </h2>	
+    </div>
+</div>
+</div>
+
+ 
+<!--requirements-->
+<div id="faded-circle" class="hero-section">
+  <div class="columns">
+    <div class="column small">
+    <h1 style="float: right;">DEFINING REQUIREMENTS</h1>
+    <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753194/IMG_9191_dyygcb.jpg" alt="damaged gym wall">
+    </div>
+    <div class="column big">   
+            <p> User Personas & Scenarios: Based on user feedback, I created two personas to capture the needs of different transit riders. For example:
+
+Persona 1: Alex, a daily commuter who needs to quickly navigate to work without delay.
+Persona 2: Maria, a tourist unfamiliar with the city's transit system who needs clear, easy-to-understand directions.
+Each persona's scenarios focused on understanding their pain points: how to easily find their route, interpret the map, and manage unexpected obstacles.
+
+Information Architecture: I mapped out the app’s information architecture, ensuring that it catered to users both online and offline. The core features included:
+
+A dynamic, zoomable transit map that connects multiple views (station-level, route-level, city-wide).
+Real-time updates about service interruptions, delays, or station closures.
+Offline map functionality, where users could still access key route information without needing an active internet connection.
+            </p>	
+    </div>
+</div>
+</div>
+
+
+<!--UI final-->
+<div id="faded-circle" class="hero-section">
+  <div class="columns">
+    <div class="column small">
+    <h1 style="float: right;">Visual design</h1>
+    <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753187/Screenshot_2024-04-25_at_14.15.27_zdanh2.png" alt="gym wall with pictograms">
+    </div>
+    <div class="column big">   
+            <h2> 
+UI Design: For the final UI design, I focused on a clean, minimalistic aesthetic that prioritized legibility and ease of navigation. 
+		    I used high-contrast colors for major transit lines and clear, simple icons for stations and transfer points. 
+		    Each map view was designed with a clear visual hierarchy to guide the user’s attention to important information, 
+		    like upcoming stops and detours.
+
+Responsive Design: The app was designed to work across both smartphones and tablets, with a responsive layout that adapted seamlessly to different 
+		    screen sizes. I also designed an intuitive offline mode where users could continue viewing their route and maps even without an 
+		    active internet connection, with visual cues showing when they were in offline mode.
+
+
+            </h2>	
+    </div>
+</div>
+</div>
+
+	  
 
    <div class="photo_gallery">
     <!-- Final products -->
