@@ -43,10 +43,12 @@ h1{
 	font-family: Avenir, Helvetica, sans-serif;
    line-height: 1.8;*/
     letter-spacing: 0.417vw;
+	
 }
 
 h1.title{
-  text-align: center;    
+  text-align: center;
+	font-size:63px;
 }
 
 h2{
