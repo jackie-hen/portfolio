@@ -9,7 +9,7 @@
 
 .scene {
   height: 100%;
-  background: #1d1f20;
+  background: #1c1c1c;
   padding: 20rem;
   text-align: center;
 
@@ -20,12 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
-  background-color: #1c1c1c;
-
 
 }
 
