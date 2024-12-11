@@ -12,6 +12,21 @@
   background: #1d1f20;
   padding: 20rem;
   text-align: center;
+
+  scroll-snap-align: end;
+  scroll-snap-stop: always;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  background-color: #1c1c1c;
+
+
 }
 
 .magic {
