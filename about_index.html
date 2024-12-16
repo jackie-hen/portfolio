@@ -16,42 +16,85 @@
 
     <!-- include styles.css as stylesheet-->
     <link rel="stylesheet" href="port_styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-</head>
-<body>
+  </head>
+  <!--loader-->
+  <body onload="myFunction()">
+    <div id="loader">
+      <svg
+        class="spinner"
+        xmlns="http://www.w3.org/2000/svg"
+        width="490"
+        height="490"
+        viewbox="0 0 490 490"
+        fill="none"
+      >
+        <circle
+          class="circleAnimation"
+          cx="245"
+          cy="245"
+          r="238"
+          stroke="#000"
+          stroke-width="12"
+        />
+        <g filter="url(#a)">
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="12"
+            d="M434.198 100.612A237.996 237.996 0 0 1 483 245"
+          />
+        </g>
+        <defs>
+          <filter
+            id="a"
+            width="70.802"
+            height="166.389"
+            x="423.198"
+            y="89.611"
+            color-interpolation-filters="sRGB"
+            filterUnits="userSpaceOnUse"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              result="effect1_foregroundBlur_1_5"
+              stdDeviation="2"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
 
+  <div style="display: none" class="content" id="myDiv">
 <header>
-
-      <nav>
-      <div id="brand" class="grow">
-        <div id="logo"><img src="img/logo.png" alt="Logo"></div>
-        <div id="word-mark">
-          <a href="index.html">
-			<h2>JACQUELINE HENNECKE</h2>
-		</a>
-		
-      </div>
-      </div>
-
-
-      <div id="menu">
-        <div id="menu-toggle">
-          <div id="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-        </div>
-
-        <ul>
-          <li class="grow"><a href="works_index.html"><h2>WORKS</h2></a></li>
-          <li class="grow"><a href="#section01"><h2>ABOUT</h2></a></li>
-        </ul>
-      </div>
-    </nav>
+  <nav class="flex-row-wrap flex-justify-between flex-align-center">
+    <div id="brand" class="grow flex-row-wrap flex-align-center">
+      <img
+        id="logo"
+        src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715792735/logo_nmpmtq.png"
+        alt="Logo"
+      />
+      <a id="word-mark-long" class="font-150 pad-x-50" href="#section01"
+        >JACQUELINE HENNECKE</a
+      >
+      <a id="word-mark-short" class="font-150 pad-x-50" href="#section01"
+        >JH</a
+      >
+    </div>
+    <div id="menu" class="font-150 flex-row-wrap">
+      <a class="grow pad-x-100" href="works_index">WORKS</a>
+      <a class="grow pad-x-100" href="about_index">ABOUT</a>
+    </div>
+  </nav>
 
 <!--First Section-->
-  </header>
+  
     <div class="hero-section" id="hero-section">
         <div class="hero-text">
            <img src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1724862667/sign_atti8k.png">
@@ -61,7 +104,7 @@
     <div id="scroll_down">
         <p> SCROLL</p>
     </div>
-
+  </header>
 
 
 <!--Biography-->
