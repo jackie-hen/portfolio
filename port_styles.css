@@ -198,6 +198,11 @@ nav {
   padding-bottom: 0.5rem;
 }
 
+.pad-y-500 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .margin-left-250 {
   margin-left: 2.5rem;
 }
@@ -776,7 +781,6 @@ section {
 .photo_column img {
   margin-top: 25px;
   vertical-align: middle;
-  width: 100%;
 }
 
 /*loading animation*/
