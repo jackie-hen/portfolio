@@ -203,6 +203,8 @@ nav {
 }
 
 /*responsive*/
+/* Media Queries */
+
 @media (max-width: 491px) {
   .gallery .gallery-item {
     width: 50%;
@@ -217,7 +219,6 @@ nav {
   }
 }
 
-/* Media Queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
@@ -289,6 +290,10 @@ nav {
       padding-right: 2rem;
       line-height: 2;
     }
+  }
+
+  .img_small {
+    display: none;
   }
 }
 
@@ -723,12 +728,6 @@ section {
   margin-right: 30px;
   margin-left: 30px;
   width: 50%;
-}
-
-.img_small {
-  height: 400px;
-  width: 300px;
-  float: right;
 }
 
 .works_text {
