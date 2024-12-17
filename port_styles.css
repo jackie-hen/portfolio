@@ -208,115 +208,6 @@ nav {
 }
 
 /*responsive*/
-/* Media Queries */
-
-@media (max-width: 491px) {
-  .gallery .gallery-item {
-    width: 50%;
-  }
-}
-@media (max-width: 467px) {
-  .gallery .gallery-item {
-    width: 100%;
-  }
-  .gallery .gallery-filter .filter-item {
-    margin-bottom: 10px;
-  }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* To (<=) Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .photo_column {
-    max-width: 100%;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  #word-mark-long {
-    display: none;
-  }
-
-  nav {
-    padding: 1rem 1.5rem 0;
-  }
-
-  .glowing-btn {
-    font-size: 1em;
-  }
-
-  .footer {
-    text-align: left;
-    padding: 5%;
-  }
-
-  .hero-content {
-    margin-left: 0;
-    justify-content: flex-start;
-
-    & .hero-col-1 {
-      text-align: left;
-      align-items: flex-start;
-      margin-bottom: 1rem;
-
-      & .date {
-        font-size: 1rem;
-      }
-
-      & p {
-        max-width: 100%;
-      }
-    }
-
-    & .hero-col-2 {
-      font-size: 1rem;
-    }
-
-    & .hero-col-1,
-    & .hero-col-2 {
-      max-width: 100%;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      line-height: 2;
-    }
-  }
-
-  .img_small {
-    display: none;
-  }
-}
-
-/* From (>=) Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  #word-mark-short {
-    display: none;
-  }
-
-  nav {
-    padding: 1rem 1rem 0;
-  }
-  .photo_column {
-    max-width: 50%;
-  }
-}
-
-/* To (<=) Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-}
-
-/* From (>=) Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
 
 /*** Menu Styles ***/
 
@@ -896,4 +787,110 @@ section {
   100% {
     filter: url("#squiggly-4");
   }
+}
+/* Media Queries */
+
+@media (max-width: 491px) {
+  .gallery .gallery-item {
+    width: 50%;
+  }
+}
+@media (max-width: 467px) {
+  .gallery .gallery-item {
+    width: 100%;
+  }
+  .gallery .gallery-filter .filter-item {
+    margin-bottom: 10px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* To (<=) Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .photo_column {
+    max-width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #word-mark-long {
+    display: none;
+  }
+
+  nav {
+    padding: 1rem 1.5rem 0;
+  }
+
+  .glowing-btn {
+    font-size: 1em;
+  }
+
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    justify-content: flex-start;
+
+    & .hero-col-1 {
+      text-align: left;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+
+      & .date {
+        font-size: 1rem;
+      }
+
+      & p {
+        max-width: 100%;
+      }
+    }
+
+    & .hero-col-2 {
+      font-size: 1rem;
+    }
+
+    & .hero-col-1,
+    & .hero-col-2 {
+      max-width: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      line-height: 2;
+    }
+  }
+
+  .img_small {
+    display: none;
+  }
+}
+
+/* From (>=) Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #word-mark-short {
+    display: none;
+  }
+
+  nav {
+    padding: 1rem 1rem 0;
+  }
+}
+
+/* To (<=) Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}
+
+/* From (>=) Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
