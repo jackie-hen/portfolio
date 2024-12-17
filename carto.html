@@ -1,262 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
+  <head>
     <!--Title of the page-->
     <title>Carto</title>
 
     <!--Include google fonts for header and body-->
-    <link href="https://fonts.googleapis.com/css?family=Avenir" rel = 'stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Avenir"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- include styles.css as stylesheet-->
-    <link rel="stylesheet" href="port_styles.css">
-    <link rel="stylesheet" href="spotlight_styles.css">
+    <link rel="stylesheet" href="port_styles.css" />
+    <link rel="stylesheet" href="spotlight_styles.css" />
 
-    
-</head>
-<!--loader-->
-<body onload="myFunction()">   
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <!--loader-->
+  <body onload="myFunction()">
     <div id="loader">
-      <svg class="spinner" xmlns="http://www.w3.org/2000/svg" width="490" height="490" viewbox="0 0 490 490"fill="none">
-        <circle class="circleAnimation" cx="245" cy="245" r="238" stroke="#000" stroke-width="12"/><g filter="url(#a)">
-          <path stroke="currentColor" stroke-linecap="round" stroke-width="12" d="M434.198 100.612A237.996 237.996 0 0 1 483 245"/></g><defs><filter id="a" width="70.802" height="166.389" x="423.198" y="89.611" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_1_5" stdDeviation="2"/></filter></defs>
+      <svg
+        class="spinner"
+        xmlns="http://www.w3.org/2000/svg"
+        width="490"
+        height="490"
+        viewbox="0 0 490 490"
+        fill="none"
+      >
+        <circle
+          class="circleAnimation"
+          cx="245"
+          cy="245"
+          r="238"
+          stroke="#000"
+          stroke-width="12"
+        />
+        <g filter="url(#a)">
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="12"
+            d="M434.198 100.612A237.996 237.996 0 0 1 483 245"
+          />
+        </g>
+        <defs>
+          <filter
+            id="a"
+            width="70.802"
+            height="166.389"
+            x="423.198"
+            y="89.611"
+            color-interpolation-filters="sRGB"
+            filterUnits="userSpaceOnUse"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              result="effect1_foregroundBlur_1_5"
+              stdDeviation="2"
+            />
+          </filter>
+        </defs>
       </svg>
     </div>
-  
-  <div style=display:none; class="content" id="myDiv">
- 
-<header>
-    <nav>
-      <div id="brand" class="grow">
-        <div id="logo"><img src="img/logo.png" alt="Logo"></div>
-        <div id="word-mark">
-          <a href="index">
-			<h2>JACQUELINE HENNECKE</h2>
-		</a>
-		
-      </div>
-      </div>
 
-      <div id="menu">
-        <div id="menu-toggle">
-          <div id="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+    <div style="display: none" class="content" id="myDiv">
+      <header>
+        <nav class="flex-row-wrap flex-justify-between flex-align-center">
+          <div id="brand" class="grow flex-row-wrap flex-align-center">
+            <img
+              id="logo"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715792735/logo_nmpmtq.png"
+              alt="Logo"
+            />
+            <a id="word-mark-long" class="font-150 pad-x-50" href="#section01"
+              >JACQUELINE HENNECKE</a
+            >
+            <a id="word-mark-short" class="font-150 pad-x-50" href="#section01"
+              >JH</a
+            >
+          </div>
+          <div id="menu" class="font-150 flex-row-wrap">
+            <a class="grow pad-x-100" href="works_index">WORKS</a>
+            <a class="grow pad-x-100" href="about_index">ABOUT</a>
+          </div>
+        </nav>
+
+        <!-- first section -->
+
+        <div class="scene">
+          <div class="columns">
+            <div class="column small">
+              <h1 style="float: right; font-size: 63px">CARTO</h1>
+              <h1><br />DELIVERABLES<br /></h1>
+              <h2>
+                HIGH FIDELITY APP MOCKUP <br />
+                VISUAL IDENTITY
+              </h2>
+              <h1><br />ROLE</h1>
+              <h2>
+                <br />UI/UX DESIGN<br />
+                UX RESEARCH<br />
+                ILLUSTRATION<br />
+                ART DIRECTION<br />
+                DEVELOPMENT<br />
+              </h2>
+              <h1><br />DATE</h1>
+              <h2><br />DEC 7, 2024<br /></h2>
+            </div>
+            <div class="column big">
+              <img
+                class="img_small"
+                src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733891012/mockup_carto_asgiat.png"
+                alt="mobile screen"
+              />
+            </div>
+            <div class="magic"></div>
           </div>
         </div>
 
-        <ul>
-          <li class="grow"><a href="works_index"><h2>WORKS</h2></a></li>
-          <li class="grow"><a href="about_index"><h2>ABOUT</h2></a></li>
-
-        </ul>
-      </div>
-    </nav>
-    </header>
-<!-- first section -->
-
-<div class="scene">
-  <div class="columns">
-    <div class="column small">
-    <h1 style="float: right; font-size:63px;">CARTO</h1>
-	<h1><br>DELIVERABLES<br></h1>
-	    <h2>HIGH FIDELITY APP MOCKUP <br>
-		VISUAL IDENTITY</h2>
-	    <h1><br>ROLE</h1>
-	    <h2><br>UI/UX DESIGN<br>
-		UX RESEARCH<br>
-		ILLUSTRATION<br>
-		ART DIRECTION<br>
-		DEVELOPMENT<br></h2>
-	    <h1><br>DATE</h1>
-	    <h2><br>DEC 7, 2024<br></h2>
-    </div>
-    <div class="column big">
-	    <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733891012/mockup_carto_asgiat.png" alt="mobile screen">
-	    
-    </div>
-	  <div class="magic"></div>
-</div>
-</div>
-
-
-<div id="scroll_down">
-    <p> SCROLL</p>
-</div>
-
-
-<!--goals-->
-
-<div class="hero-section" style="background-color:white;">
-  <div class="columns">
-    <div class="column small" >
-    <h1 style="float: right; color:black;">CARTO<br></h1>
-    <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733890618/union-square-station_nnw1d3.jpg" alt="station map">
-    </div>
-    <div class="column big">
-        <h2 style="color:black;">
-            The goal of this project was to design an app that simplifies navigation for people using public transit, 
-		both online and offline. Many metro and transit maps are notoriously difficult to interpret, especially 
-		when navigating complex routes or in areas with limited connectivity. My app aims to connect different 
-		versions of a public transit map, providing a clear and intuitive way for users to understand their route 
-		and navigate potential obstacles, like train delays or station closures.
-        </h2> 
-    </div>
-</div>
-</div>
-
-
-<div id="scroll_down">
-    <p> SCROLL</p>
-</div>
-
-  
-<!--Biography-->
-<div class="hero-section" style="background-color:white;">
-  <div class="columns">
-    <div class="column small">
-    <h1 style="float: right; color:black;">Research & Discovery</h1>
-    <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753187/Screenshot_2024-04-25_at_14.15.27_zdanh2.png" alt="gym wall with pictograms">
-    </div>
-    <div class="column big" style="color:black;">   
-	    <h2 style="color:black;">User Research</h2>
-            <p style="color:black;"> 
- 		I began the project by interviewing frequent public transit users to understand the pain points they faced when using traditional 
-		    metro maps and navigation tools. The majority of users expressed frustration with the difficulty of interpreting complex, 
-		    static maps—especially in stressful situations like navigating transfers or during service disruptions. Key insights included confusion 
-		    around map legends, unclear transfer points, and difficulty when trying to navigate offline.</p>
-	    <h2 style="color:black;">Competitive Analysis</h2>
-	 <p style="color:black;"> 
-		I analyzed existing transit apps (e.g., Google Maps, Citymapper, local metro apps) to identify areas for improvement. 
-		    While many apps offered basic routing, they often lacked visual clarity and flexibility for offline use. My focus was on 
-		    creating an app that integrated various views and versions of transit maps to cater to different user needs in real-time and in areas with poor connectivity.
-            </p>	
-    </div>
-</div>
-</div>
-
- 
-
-
-<!--requirements-->
-<div class="hero-section" style="background-color:white;">
-  <div class="columns">
-    <div class="column small">
-    <h1 style="float:right; color:black;">DEFINING REQUIREMENTS</h1>
-    <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753194/IMG_9191_dyygcb.jpg" alt="damaged gym wall">
-    </div>
-    <div class="column big">   
-	    <h2 style="color:black;">User Personas & Scenarios</h2>
-            <p style="color:black;">Based on user feedback, I created two personas to capture the needs of different transit riders. For example:
-
-Persona 1: Alex, a daily commuter who needs to quickly navigate to work without delay.
-Persona 2: Maria, a tourist unfamiliar with the city's transit system who needs clear, easy-to-understand directions.
-Each persona's scenarios focused on understanding their pain points: how to easily find their route, interpret the map, and manage unexpected obstacles.
-
-Information Architecture: I mapped out the app’s information architecture, ensuring that it catered to users both online and offline. The core features included:
-
-A dynamic, zoomable transit map that connects multiple views (station-level, route-level, city-wide).
-Real-time updates about service interruptions, delays, or station closures.
-Offline map functionality, where users could still access key route information without needing an active internet connection. I built the information architecture off user potential user flows.
-            </p>	
-    </div>
-</div>
-</div>
-	  
-<!--user flows-->
-  
- <div class="photo_gallery" style="background-color:white; color:black;">
-    <!-- Photo Grid -->
-    <div class="photo_row"> 
-        <img src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733708442/carto_user_flows_bhrj86.png" style="width:100%; padding: 0 10px;">
-        
-      </div>
-    </div>
-
-
-<!--early mockups-->
-  
- <div class="photo_gallery" style="background-color:white; color:black;">
-    <!-- Photo Grid -->
-    <div class="photo_row"> 
-        <img src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733890558/Untitled_Artwork_146_dguywy.png" style="width:100%; padding: 0 10px;">
-        
-      </div>
-    </div>
-
-
-<!--UX research-->
-<div id="faded-circle" class="hero-section">
-  <div class="columns">
-    <div class="column small">
-    <h1 style="float: right;">Usability Testing</h1>
-    <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753187/Screenshot_2024-04-25_at_14.15.27_zdanh2.png" alt="gym wall with pictograms">
-    </div>
-    <div class="column big">   
-            <h2> Usability Testing</h2> <p>I conducted several rounds of task-based usability testing with public transit users to identify how well the app met user needs. Key tests focused on:
-		Route comprehension: Was it clear where users should go next?
-		Offline functionality: Can users navigate smoothly given obstacles or intrusions?
-		Feedback indicated that users appreciated the simplicity of the map, but some struggled to find stations from the overview map. 
-		Based on this, I iterated on the design by emphasizing the search function, making it a more obvious starting place for users looking to jump to stations. </p>
-    </div>
-</div>
-</div>
-
- 
-<!--UI final-->
-<div id="faded-circle" class="hero-section">
-  <div class="columns">
-    <div class="column small">
-    <h1 style="float: right;">Visual design</h1>
-    <img class="img_small" src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753187/Screenshot_2024-04-25_at_14.15.27_zdanh2.png" alt="gym wall with pictograms">
-    </div>
-    <div class="column big">   
-            <h2> UI Design </h2> <p>For the final UI design, I focused on a clean, minimalistic aesthetic that prioritized legibility and ease of navigation. 
-		    I used high-contrast colors for major transit lines and clear, simple icons for stations and transfer points. 
-		    Each map view was designed with a clear visual hierarchy to guide the user’s attention to important information, 
-		    like upcoming stops and detours. </p>	
-    </div>
-</div>
-</div>
-
-	  
-
-   <div class="photo_gallery">
-    <!-- Final products -->
-
-	   <video controls="controls" width="400" height="600" name="Figma prototype">
-  	<source src="https://res.cloudinary.com/dtxb76tmn/video/upload/v1733891709/Screen_Recording_2024-12-10_at_22.06.51_qu8ora.mov">
-	</video>
-    </div>
-	  
-
-	  
-
- <div class="photo_gallery">
-    <!-- Final products 2 -->
-    <div class="photo_row"> 
-        <div class="photo_column" style="-ms-flex: 50%; flex: 50%; max-width: 50%;">
-          <img src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725752990/Untitled_Artwork_128_ggqemy.png" style="width:100%">
-
+        <div id="scroll_down">
+          <p>SCROLL</p>
         </div>
-        <div class="photo_column" style="-ms-flex: 50%; flex: 50%; max-width: 50%;">
-            <img src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725752990/Untitled_Artwork_129_yvrzye.png" style="width:100%">
-        </div>  
+      </header>
+
+      <!--goals-->
+
+      <div class="hero-section" style="background-color: white">
+        <div class="columns">
+          <div class="column small">
+            <h1 style="float: right; color: black">CARTO<br /></h1>
+            <img
+              class="img_small"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733890618/union-square-station_nnw1d3.jpg"
+              alt="station map"
+            />
+          </div>
+          <div class="column big">
+            <h2 style="color: black">
+              The goal of this project was to design an app that simplifies
+              navigation for people using public transit, both online and
+              offline. Many metro and transit maps are notoriously difficult to
+              interpret, especially when navigating complex routes or in areas
+              with limited connectivity. My app aims to connect different
+              versions of a public transit map, providing a clear and intuitive
+              way for users to understand their route and navigate potential
+              obstacles, like train delays or station closures.
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div id="scroll_down">
+        <p>SCROLL</p>
+      </div>
+
+      <!--Biography-->
+      <div class="hero-section" style="background-color: white">
+        <div class="columns">
+          <div class="column small">
+            <h1 style="float: right; color: black">Research & Discovery</h1>
+            <img
+              class="img_small"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753187/Screenshot_2024-04-25_at_14.15.27_zdanh2.png"
+              alt="gym wall with pictograms"
+            />
+          </div>
+          <div class="column big" style="color: black">
+            <h2 style="color: black">User Research</h2>
+            <p style="color: black">
+              I began the project by interviewing frequent public transit users
+              to understand the pain points they faced when using traditional
+              metro maps and navigation tools. The majority of users expressed
+              frustration with the difficulty of interpreting complex, static
+              maps—especially in stressful situations like navigating transfers
+              or during service disruptions. Key insights included confusion
+              around map legends, unclear transfer points, and difficulty when
+              trying to navigate offline.
+            </p>
+            <h2 style="color: black">Competitive Analysis</h2>
+            <p style="color: black">
+              I analyzed existing transit apps (e.g., Google Maps, Citymapper,
+              local metro apps) to identify areas for improvement. While many
+              apps offered basic routing, they often lacked visual clarity and
+              flexibility for offline use. My focus was on creating an app that
+              integrated various views and versions of transit maps to cater to
+              different user needs in real-time and in areas with poor
+              connectivity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--requirements-->
+      <div class="hero-section" style="background-color: white">
+        <div class="columns">
+          <div class="column small">
+            <h1 style="float: right; color: black">DEFINING REQUIREMENTS</h1>
+            <img
+              class="img_small"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753194/IMG_9191_dyygcb.jpg"
+              alt="damaged gym wall"
+            />
+          </div>
+          <div class="column big">
+            <h2 style="color: black">User Personas & Scenarios</h2>
+            <p style="color: black">
+              Based on user feedback, I created two personas to capture the
+              needs of different transit riders. For example: Persona 1: Alex, a
+              daily commuter who needs to quickly navigate to work without
+              delay. Persona 2: Maria, a tourist unfamiliar with the city's
+              transit system who needs clear, easy-to-understand directions.
+              Each persona's scenarios focused on understanding their pain
+              points: how to easily find their route, interpret the map, and
+              manage unexpected obstacles. Information Architecture: I mapped
+              out the app’s information architecture, ensuring that it catered
+              to users both online and offline. The core features included: A
+              dynamic, zoomable transit map that connects multiple views
+              (station-level, route-level, city-wide). Real-time updates about
+              service interruptions, delays, or station closures. Offline map
+              functionality, where users could still access key route
+              information without needing an active internet connection. I built
+              the information architecture off user potential user flows.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--user flows-->
+
+      <div class="photo_gallery" style="background-color: white; color: black">
+        <!-- Photo Grid -->
+        <div class="photo_row">
+          <img
+            src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733708442/carto_user_flows_bhrj86.png"
+            style="width: 100%; padding: 0 10px"
+          />
+        </div>
+      </div>
+
+      <!--early mockups-->
+
+      <div class="photo_gallery" style="background-color: white; color: black">
+        <!-- Photo Grid -->
+        <div class="photo_row">
+          <img
+            src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733890558/Untitled_Artwork_146_dguywy.png"
+            style="width: 100%; padding: 0 10px"
+          />
+        </div>
+      </div>
+
+      <!--UX research-->
+      <div id="faded-circle" class="hero-section">
+        <div class="columns">
+          <div class="column small">
+            <h1 style="float: right">Usability Testing</h1>
+            <img
+              class="img_small"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753187/Screenshot_2024-04-25_at_14.15.27_zdanh2.png"
+              alt="gym wall with pictograms"
+            />
+          </div>
+          <div class="column big">
+            <h2>Usability Testing</h2>
+            <p>
+              I conducted several rounds of task-based usability testing with
+              public transit users to identify how well the app met user needs.
+              Key tests focused on: Route comprehension: Was it clear where
+              users should go next? Offline functionality: Can users navigate
+              smoothly given obstacles or intrusions? Feedback indicated that
+              users appreciated the simplicity of the map, but some struggled to
+              find stations from the overview map. Based on this, I iterated on
+              the design by emphasizing the search function, making it a more
+              obvious starting place for users looking to jump to stations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--UI final-->
+      <div id="faded-circle" class="hero-section">
+        <div class="columns">
+          <div class="column small">
+            <h1 style="float: right">Visual design</h1>
+            <img
+              class="img_small"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725753187/Screenshot_2024-04-25_at_14.15.27_zdanh2.png"
+              alt="gym wall with pictograms"
+            />
+          </div>
+          <div class="column big">
+            <h2>UI Design</h2>
+            <p>
+              For the final UI design, I focused on a clean, minimalistic
+              aesthetic that prioritized legibility and ease of navigation. I
+              used high-contrast colors for major transit lines and clear,
+              simple icons for stations and transfer points. Each map view was
+              designed with a clear visual hierarchy to guide the user’s
+              attention to important information, like upcoming stops and
+              detours.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="photo_gallery">
+        <!-- Final products -->
+
+        <video
+          controls="controls"
+          width="400"
+          height="600"
+          name="Figma prototype"
+        >
+          <source
+            src="https://res.cloudinary.com/dtxb76tmn/video/upload/v1733891709/Screen_Recording_2024-12-10_at_22.06.51_qu8ora.mov"
+          />
+        </video>
+      </div>
+
+      <div class="photo_gallery">
+        <!-- Final products 2 -->
+        <div class="photo_row">
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725752990/Untitled_Artwork_128_ggqemy.png"
+              style="width: 100%"
+            />
+          </div>
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1725752990/Untitled_Artwork_129_yvrzye.png"
+              style="width: 100%"
+            />
+          </div>
+        </div>
       </div>
     </div>
-	  
-
-
-
-	  
-  </div>
-<!--include script.js-->
-<script src="port_script.js" ></script>
-
-</body>
+    <!--include script.js-->
+    <script src="port_script.js"></script>
+  </body>
 </html>
