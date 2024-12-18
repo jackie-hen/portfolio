@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Title of the page-->
+    <title>Postcards of Power</title>
+
+    <!--Include google fonts for header and body-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Avenir"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- include styles.css as stylesheet-->
+    <link rel="stylesheet" href="../../css/port_styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <!--loader-->
+  <body onload="myFunction()">
+    <div id="loader">
+      <svg
+        class="spinner"
+        xmlns="http://www.w3.org/2000/svg"
+        width="490"
+        height="490"
+        viewbox="0 0 490 490"
+        fill="none"
+      >
+        <circle
+          class="circleAnimation"
+          cx="245"
+          cy="245"
+          r="238"
+          stroke="#000"
+          stroke-width="12"
+        />
+        <g filter="url(#a)">
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="12"
+            d="M434.198 100.612A237.996 237.996 0 0 1 483 245"
+          />
+        </g>
+        <defs>
+          <filter
+            id="a"
+            width="70.802"
+            height="166.389"
+            x="423.198"
+            y="89.611"
+            color-interpolation-filters="sRGB"
+            filterUnits="userSpaceOnUse"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              result="effect1_foregroundBlur_1_5"
+              stdDeviation="2"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <!--header-->
+    <div style="display: none" class="content" id="myDiv">
+      <header>
+        <nav class="flex-row-wrap flex-justify-between flex-align-center">
+          <div id="brand" class="grow flex-row-wrap flex-align-center">
+            <img
+              id="logo"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715792735/logo_nmpmtq.png"
+              alt="Logo"
+            />
+            <a id="word-mark-long" class="font-150 pad-x-50" href="../../"
+              >JACQUELINE HENNECKE</a
+            >
+            <a id="word-mark-short" class="font-150 pad-x-50" href="../../"
+              >JH</a
+            >
+          </div>
+          <div id="menu" class="font-150 flex-row-wrap">
+            <a class="grow pad-x-100" href="../">WORKS</a>
+            <a class="grow pad-x-100" href="../../about">ABOUT</a>
+          </div>
+        </nav>
+
+        <div id="faded-circle" class="hero-section">
+          <div class="columns">
+            <div class="column small">
+              <h1 style="float: right; text-align: right">
+                POSTCARDS OF <br />POWER
+              </h1>
+              <img
+                class="img_small"
+                src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772111/postcards_uk2lwc.png"
+                alt="postcard"
+                style="height: 20%"
+              />
+            </div>
+
+            <div class="column big">
+              <h2>
+                This series focuses on historical representations of natural
+                architecture. The sustained investigation has two distinct parts
+                that form a narrative about how landscape continues to serve as
+                a tool for power. <br />
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div id="scroll_down">
+          <p>SCROLL</p>
+        </div>
+      </header>
+      <!--gardens-->
+      <div class="photo_gallery">
+        <!-- Photo Grid -->
+        <div class="photo_row">
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772161/villa1_sbw0zz.jpg"
+              style="height: 85%; width: 70%; float: right"
+            />
+          </div>
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772163/villa2_eawvfb.jpg"
+              style="height: 85%; width: 70%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="faded-circle" class="hero-section">
+        <div class="columns">
+          <div class="column big" style="padding-left: 10%">
+            <p>
+              I start with the 20th-century photography of Florentine gardens.
+              The garden photography imitates Acton family photos from the
+              archives of Villa La Pietra. The Acton Collection demonstrates an
+              aesthetic focus on Italian landscape architecture that parallels
+              the current gardens. When New York University inherited the villa,
+              they restored it in the style of these early photographs,
+              reminiscing on the guests and events hosted during the 1930s.
+              These photographs center on early daguerrotypes and stereoscopic
+              techniques that accentuate the delicate but powerful gardens.
+            </p>
+          </div>
+          <div class="column small">
+            <h1>FLORENTINE GARDENS</h1>
+            <img
+              class="img_small"
+              style="float: left; height: 20%"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772166/villa3_c5p1iw.jpg"
+              alt="plants"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="photo_gallery">
+        <!-- Photo Grid -->
+        <div class="photo_row">
+          <img
+            src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772146/reference4_crzbgb.jpg"
+            style="width: 100%; padding: 0 10px"
+          />
+
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772121/reference3_ock2mh.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772115/reference1_g7o3xc.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772117/reference2_iia4gd.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772171/villa5_q1fmup.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772176/villa6_cal1qk.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772166/villa3_c5p1iw.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772172/villa4_jkh9ts.jpg"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--Alps-->
+      <div id="faded-circle" class="hero-section">
+        <div class="columns">
+          <div class="column small">
+            <h1 style="float: right">THE EARLY ALPS</h1>
+            <img
+              class="img_small"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772152/reference5_l8asda.jpg"
+              alt="mountains"
+              style="height: 20%"
+            />
+            <h3 style="clear: right; text-align: right">
+              ‘Bavarian/Lower Austrian Alps,’ by Marc Walter/ <br />Photovintage
+              France in The Alps 1900. A Portrait in Color.
+              https://www.cntraveler.com/gallery/the-alps-1900-a-portrait-in-color
+            </h3>
+          </div>
+          <div class="column big">
+            <h2>
+              Another part of this project draws from 20th-century photography
+              of the Italian Alps. Peaceful and poetic, historical images of the
+              Dolomites show wealthy vacationers searching for tranquility
+              alongside daring alpinists searching for romantic discoveries.
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div id="faded-circle" class="hero-section">
+        <div class="columns">
+          <div class="column big" style="padding-left: 10%">
+            <p>
+              Today, the Alps are rapidly becoming more accessible, and the
+              tourist impact has been astronomical on local economies and
+              conservation efforts. But Dolomite towns still curate national
+              parks to give visitors and hikers the same pastoralism and
+              romanticism sought in the early 20th century. My Alpine pictures
+              reflect the angles, paths, and refuges that sprawl across the
+              Southern Alps, giving an aura of wilderness and simplicity. I also
+              pay attention to the unique color palette and styles developed by
+              hotel networks to market their early polychrome prints. The
+              postcard format allows for a sense of intimacy and personal
+              connection as if the viewer has been invited to experience the
+              landscape.
+            </p>
+          </div>
+          <div class="column small">
+            <h1>THE ALPS TODAY</h1>
+            <img
+              class="img_small"
+              style="float: left; height: 20%"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772156/reference6_c5zlzc.jpg"
+              alt="mountains"
+            />
+            <h3 style="clear: left">
+              ‘Maloja,’ by Marc Walter/Photovintage France in The Alps 1900. A
+              Portrait in Color.
+              https://www.cntraveler.com/gallery/the-alps-1900-a-portrait-in-color
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="photo_gallery">
+        <!-- Photo Grid -->
+        <div class="photo_row" style="padding: 0 100px">
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772083/alps3_wzmtrm.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772073/alps1_xkihc8.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772079/alps2_mji8ce.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772088/alps4_fostti.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772102/alps5_vum96q.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715772104/alps6_vfmuqn.jpg"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--Final Note-->
+      <div id="faded-circle" class="hero-section">
+        <div class="columns">
+          <div class="column big" style="padding-left: 10%">
+            <p>
+              Throughout the investigation, I draw parallels between aesthetic
+              structures across time by imitating the format, color palette, and
+              styles adopted by 20th-century landscape photographers. In
+              addition to revealing the significance of these places, drawing on
+              historical photography allows me to show how the aesthetics of
+              landscape architecture have changed.
+            </p>
+          </div>
+          <div class="column small">
+            <h1>FINAL NOTE</h1>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <div class="row">Website Designed By: Jacqueline Hennecke</div>
+        </div>
+      </footer>
+    </div>
+    <!--include script.js-->
+    <script src="../../js/port_script.js"></script>
+  </body>
+</html>

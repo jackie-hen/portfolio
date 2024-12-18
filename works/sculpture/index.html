@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Title of the page-->
+    <title>Sculpture</title>
+
+    <!--Include google fonts for header and body-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Avenir"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- include styles.css as stylesheet-->
+    <link rel="stylesheet" href="../../css/port_styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <!--loader-->
+  <body onload="myFunction()">
+    <div id="loader">
+      <svg
+        class="spinner"
+        xmlns="http://www.w3.org/2000/svg"
+        width="490"
+        height="490"
+        viewbox="0 0 490 490"
+        fill="none"
+      >
+        <circle
+          class="circleAnimation"
+          cx="245"
+          cy="245"
+          r="238"
+          stroke="#000"
+          stroke-width="12"
+        />
+        <g filter="url(#a)">
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="12"
+            d="M434.198 100.612A237.996 237.996 0 0 1 483 245"
+          />
+        </g>
+        <defs>
+          <filter
+            id="a"
+            width="70.802"
+            height="166.389"
+            x="423.198"
+            y="89.611"
+            color-interpolation-filters="sRGB"
+            filterUnits="userSpaceOnUse"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              result="effect1_foregroundBlur_1_5"
+              stdDeviation="2"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <div style="display: none" class="content" id="myDiv">
+      <header>
+        <nav class="flex-row-wrap flex-justify-between flex-align-center">
+          <div id="brand" class="grow flex-row-wrap flex-align-center">
+            <img
+              id="logo"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715792735/logo_nmpmtq.png"
+              alt="Logo"
+            />
+            <a id="word-mark-long" class="font-150 pad-x-50" href="../../"
+              >JACQUELINE HENNECKE</a
+            >
+            <a id="word-mark-short" class="font-150 pad-x-50" href="../../"
+              >JH</a
+            >
+          </div>
+          <div id="menu" class="font-150 flex-row-wrap">
+            <a class="grow pad-x-100" href="../">WORKS</a>
+            <a class="grow pad-x-100" href="../../about">ABOUT</a>
+          </div>
+        </nav>
+
+        <!--first section-->
+        <div
+          class="hero-section"
+          style="
+            background-image: url('https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1715769892/plain_back_nroefb.png');
+            background-color: rgba(0, 0, 0, 0.6);
+            background-blend-mode: darken;
+          "
+        >
+          <div
+            class="hero-content flex-row-wrap flex-justify-center margin-left-250"
+          >
+            <div
+              class="hero-col-1 flex-column-wrap flex-align-end text-align-right max-width-30 pad-x-300"
+            >
+              <h1>Sculpture</h1>
+              <img
+                class="img_small"
+                src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769248/sculpt_zttdci.png"
+                alt="plants"
+              />
+            </div>
+
+            <p class="hero-col-2 max-width-50 font-150 pad-x-300">
+              My sculptural investigations outline the beginning of my
+              environmental art practice. Inspired by solitary backcountry
+              experiences and dedicated to understanding my relationship to
+              nature, I explore the tension between manmade and natural forms.
+              Through trials of control and chaos, my sculptures work with the
+              flexibility and availability of the media, developing a study
+              aimed at the drama of the living world.
+            </p>
+          </div>
+        </div>
+
+        <div id="scroll_down">
+          <p>SCROLL</p>
+        </div>
+      </header>
+      <!--geometry-->
+
+      <div
+        class="hero-section"
+        style="
+          background-image: url('https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1715769892/plain_back_nroefb.png');
+          background-color: rgba(0, 0, 0, 0.6);
+          background-blend-mode: darken;
+        "
+      >
+        <div
+          class="hero-content flex-row-wrap flex-justify-center margin-left-250"
+        >
+          <p
+            class="hero-col-1 flex-column-wrap flex-align-end text-align-right max-width-50 pad-x-300"
+          >
+            My first series works small, illustrating implied form and empty
+            space. I use palm fronds, twigs and flowers to interpret the
+            impermanence of our impact on the earth. My organic shapes draw
+            movement reminiscent of growth and circularity.
+          </p>
+          <div class="hero-col-2 max-width-30 font-150 pad-x-300">
+            <h1>Geometry</h1>
+            <img
+              class="img_small"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769219/geometry_oc29ep.png"
+              alt="plants"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="photo_gallery">
+        <!-- Photo Grid -->
+        <div class="photo_row">
+          <img
+            src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769233/geometry1_bqsuwo.jpg"
+            style="width: 100%; padding: 0 10px"
+          />
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769234/geometry2_fdxe5h.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769238/geometry3_npqzkh.jpg"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--figuration-->
+
+      <div
+        class="hero-section"
+        style="
+          background-image: url('https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1715769892/plain_back_nroefb.png');
+          background-color: rgba(0, 0, 0, 0.6);
+          background-blend-mode: darken;
+        "
+      >
+        <div
+          class="hero-content flex-row-wrap flex-justify-center margin-left-250"
+        >
+          <div
+            class="hero-col-1 flex-column-wrap flex-align-end text-align-right max-width-30 pad-x-300"
+          >
+            <h1>Figuration</h1>
+            <img
+              class="img_small"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769217/figuration_lsxirq.png"
+              alt="figures"
+            />
+          </div>
+
+          <p class="hero-col-2 max-width-50 font-150 pad-x-300">
+            I then turn to large-scale works. I experiment with plastic
+            material, juxtaposing geometric shapes and mulch to create tension
+            between humans and landscapes. I construct wooden and plastic boxes
+            to play with geometric contrast and explore the exertion of human
+            will on greenery.
+          </p>
+        </div>
+      </div>
+
+      <div class="photo_gallery">
+        <!-- Photo Grid -->
+        <div class="photo_row" style="padding: 0 100px">
+          <img
+            src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769145/figur1_upqjoz.png"
+            style="width: 100%; padding: 0 100px"
+          />
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769213/figur2_mpoor2.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769215/figur3_vkifzs.jpg"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="photo_gallery">
+        <!-- Photo Grid -->
+        <div class="photo_row" style="padding: 0 100px">
+          <div class="photo_column">
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769142/chair1_yuyfpl.png"
+            />
+          </div>
+          <div class="photo_column">
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769144/chair3_w5qgaj.jpg"
+            />
+          </div>
+
+          <div class="photo_column" style="padding-top: 30px">
+            <h3>
+              The Chair captures human presence and how we participate in
+              landscapes. The Chair was awarded a Gold Key in the 2020
+              Scholastics Art & Writing Competition and displayed in the awards
+              exhibition.
+            </h3>
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769143/chair2_uihaxc.jpg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="photo_gallery">
+        <!-- Photo Grid -->
+        <div class="photo_row">
+          <div class="photo_column">
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769240/head1_w9viqu.png"
+            />
+          </div>
+          <div
+            class="photo_column"
+            style="-ms-flex: 50%; flex: 50%; max-width: 50%"
+          >
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769242/head2_v7zzhg.png"
+              style="width: 100%"
+            />
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715769245/head3_lwqofe.png"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <div class="row">Website Designed By: Jacqueline Hennecke</div>
+        </div>
+      </footer>
+    </div>
+    <!--include script.js-->
+    <script src="../../js/port_script.js"></script>
+  </body>
+</html>
