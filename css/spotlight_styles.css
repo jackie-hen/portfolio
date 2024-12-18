@@ -2,28 +2,6 @@
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/Anders.ttf");
   font-family: test;
 }
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.scene {
-  height: 100%;
-  background: #1c1c1c;
-  padding: 20rem;
-  text-align: center;
-
-  scroll-snap-align: end;
-  scroll-snap-stop: always;
-  width: 100vw;
-  height: calc(100vh - 100px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  z-index: 1;
-
-}
 
 .magic {
   z-index: 5;
@@ -32,7 +10,8 @@
   left: calc(50% - 10rem);
   width: 20rem;
   height: 20rem;
-  background: url("https://res.cloudinary.com/dtxb76tmn/image/upload/v1733782474/Carto_bg_yqoleb.png") 50% 50% no-repeat fixed;
+  background: url("https://res.cloudinary.com/dtxb76tmn/image/upload/v1733782474/Carto_bg_yqoleb.png")
+    50% 50% no-repeat fixed;
   background-size: cover;
   border-radius: 50%;
 }

@@ -1,20 +1,22 @@
-	//On Scroll Functionality
-	$(window).scroll( () => {
-		var windowTop = $(window).scrollTop();
-		windowTop > 100 ? $('nav').addClass('navShadow') : $('nav').removeClass('navShadow');
-		windowTop > 100 ? $('ul').css('top','100px') : $('ul').css('top','160px');
-	});
-	
-	//Smooth Scrolling Using Navigation Menu
-	$('a[href*="#"]').on('click', function(e){
-		$('html,body').animate({
-			scrollTop: $($(this).attr('href')).offset().top - 100
-		},500);
-		e.preventDefault();
-	});
-	
+//On Scroll Functionality
+$(window).scroll(() => {
+  var windowTop = $(window).scrollTop();
+  windowTop > 100
+    ? $("nav").addClass("navShadow")
+    : $("nav").removeClass("navShadow");
+  windowTop > 100 ? $("ul").css("top", "100px") : $("ul").css("top", "160px");
+});
 
-
+//Smooth Scrolling Using Navigation Menu
+$('a[href*="#"]').on("click", function (e) {
+  $("html,body").animate(
+    {
+      scrollTop: $($(this).attr("href")).offset().top - 100,
+    },
+    500
+  );
+  e.preventDefault();
+});
 
 /**
  * recursively get all text nodes as an array for a given element
@@ -46,10 +48,10 @@ function wrapEachCharacter(textNode, tag) {
   var text = textNode.nodeValue;
   var parent = textNode.parentNode;
 
-  var characters = text.split('');
+  var characters = text.split("");
   var elements = [];
   var i = 0;
-  characters.forEach(function(character) {
+  characters.forEach(function (character) {
     i++;
     var element = document.createElement(tag);
     var characterNode = document.createTextNode(character);
@@ -62,86 +64,26 @@ function wrapEachCharacter(textNode, tag) {
   parent.removeChild(textNode);
 }
 
-
-
-// scroll change text
-const containers = gsap.utils.toArray(".container");
-containers.forEach((container) => {
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: container,
-      pin: true,
-      pinSpacing: false,
-      scrub: true,
-      markers: true
-    }
-  });
-
-  tl.to(container, {
-    autoAlpha: 1
-  }).to(
-    container,
-    {
-      autoAlpha: 0
-    },
-    0.5
-  );
-});
-
-
-
-
-
-
-//gallery filter
-const filterContainer = document.querySelector(".gallery-filter"),
- galleryItems = document.querySelectorAll(".gallery-item");
-
- filterContainer.addEventListener("click", (event) =>{
-   if(event.target.classList.contains("filter-item")){
-   	 // deactivate existing active 'filter-item'
-   	 filterContainer.querySelector(".active").classList.remove("active");
-   	 // activate new 'filter-item'
-   	 event.target.classList.add("active");
-   	 const filterValue = event.target.getAttribute("data-filter");
-   	 galleryItems.forEach((item) =>{
-       if(item.classList.contains(filterValue) || filterValue === 'all'){
-       	item.classList.remove("hide");
-       	 item.classList.add("show");
-       }
-       else{
-       	item.classList.remove("show");
-       	item.classList.add("hide");
-       }
-   	 });
-   }
- });
-
-
-
 //loader animation
- var myVar;
+var myVar;
 
- function myFunction() {
-   myVar = setTimeout(showPage, 1500);
- }
- 
- function showPage() {
-   document.getElementById("myDiv").style.display = "block";
-   document.getElementById("loader").style.display = "none";
+function myFunction() {
+  myVar = setTimeout(showPage, 1500);
+}
 
-   // trying to play with transitions ---
-   //window.setTimeout(function(){ document.getElementById("loader").style.display="none"; }, 2000);
+function showPage() {
+  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("loader").style.display = "none";
 
- }
-
+  // trying to play with transitions ---
+  //window.setTimeout(function(){ document.getElementById("loader").style.display="none"; }, 2000);
+}
 
 // background spotlight thing
-$(document).ready(function() {
+$(document).ready(function () {
   var $magic = $(".magic"),
-      magicWHalf = $magic.width() / 2;
-  $(document).on("mousemove", function(e) {
-    $magic.css({"left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf});
+    magicWHalf = $magic.width() / 2;
+  $(document).on("mousemove", function (e) {
+    $magic.css({ left: e.pageX - magicWHalf, top: e.pageY - magicWHalf });
   });
 });
-
