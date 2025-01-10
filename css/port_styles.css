@@ -807,6 +807,9 @@ section {
   .gallery .gallery-item {
     width: 50%;
   }
+  .figma {
+    width: 80%;
+  }
 }
 @media (max-width: 467px) {
   .gallery .gallery-item {
