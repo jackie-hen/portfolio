@@ -409,7 +409,7 @@ section {
 
 #scroll_down {
   width: 30px;
-  background-image: url(img/scroll_down.png);
+  background-image: url(../img/scroll_down.png);
   background-repeat: no-repeat;
 
   background-size: 30px 15px;
@@ -864,10 +864,9 @@ section {
       & .date {
         font-size: 1rem;
       }
-
-      & p {
-        max-width: 100%;
-      }
+    }
+    & p {
+      max-width: 100%;
     }
 
     & .hero-col-2 {
