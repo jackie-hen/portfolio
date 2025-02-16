@@ -835,6 +835,10 @@ section {
     align-items: flex-start;
     justify-content: flex-start;
   }
+  .hero-section {
+    background-attachment: scroll; /* Disable the fixed background on mobile */
+  }
+
   #word-mark-long {
     display: none;
   }
