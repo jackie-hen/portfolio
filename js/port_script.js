@@ -87,6 +87,16 @@ $(document).ready(function () {
     $magic.css({ left: e.pageX - magicWHalf, top: e.pageY - magicWHalf });
   });
 });
+$(document).ready(function () {
+  var $desmagic = $(".desmagic"),
+    desmagicWHalf = $desmagic.width() / 2;
+  $(document).on("mousemove", function (e) {
+    $desmagic.css({
+      left: e.pageX - desmagicWHalf,
+      top: e.pageY - desmagicWHalf,
+    });
+  });
+});
 
 $(window).on("load", function () {
   $(window)
