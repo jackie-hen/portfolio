@@ -1,1 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Title of the page-->
+    <title>Spotify Redesign</title>
 
+    <!--Include google fonts for header and body-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Avenir"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- include styles.css as stylesheet-->
+    <link rel="stylesheet" href="../../css/port_styles.css" />
+    <link rel="stylesheet" href="../../css/spotlight_styles.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <!--loader-->
+  <body onload="myFunction()">
+    <div id="loader">
+      <svg
+        class="spinner"
+        xmlns="http://www.w3.org/2000/svg"
+        width="490"
+        height="490"
+        viewbox="0 0 490 490"
+        fill="none"
+      >
+        <circle
+          class="circleAnimation"
+          cx="245"
+          cy="245"
+          r="238"
+          stroke="#000"
+          stroke-width="12"
+        />
+        <g filter="url(#a)">
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="12"
+            d="M434.198 100.612A237.996 237.996 0 0 1 483 245"
+          />
+        </g>
+        <defs>
+          <filter
+            id="a"
+            width="70.802"
+            height="166.389"
+            x="423.198"
+            y="89.611"
+            color-interpolation-filters="sRGB"
+            filterUnits="userSpaceOnUse"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              result="effect1_foregroundBlur_1_5"
+              stdDeviation="2"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <div style="display: none" class="content" id="myDiv">
+      <header>
+        <nav class="flex-row-wrap flex-justify-between flex-align-center">
+          <div id="brand" class="grow flex-row-wrap flex-align-center">
+            <img
+              id="logo"
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/v1715792735/logo_nmpmtq.png"
+              alt="Logo"
+            />
+            <a id="word-mark-long" class="font-150 pad-x-50" href="../../"
+              >JACQUELINE HENNECKE</a
+            >
+            <a id="word-mark-short" class="font-150 pad-x-50" href="../../"
+              >JH</a
+            >
+          </div>
+          <div id="menu" class="font-150 flex-row-wrap">
+            <a class="grow pad-x-100" href="../">WORKS</a>
+            <a class="grow pad-x-100" href="../../about">ABOUT</a>
+          </div>
+        </nav>
+
+        <!-- first section -->
+
+        <div class="hero-section">
+          <div class="magic"></div>
+          <div
+            class="hero-content flex-row-wrap flex-justify-center margin-left-250"
+            style="z-index: 3"
+          >
+            <div
+              class="hero-col-1 flex-column-wrap flex-align-end text-align-right max-width-30 pad-x-300"
+            >
+              <h1>Re-constructing an app</h1>
+              <h2 class="pad-y-50">DELIVERABLES</h2>
+              <p>
+                HIGH FIDELITY APP MOCKUP <br />
+                VISUAL IDENTITY
+              </p>
+              <h2 class="pad-y-50">MY ROLE</h2>
+              <p>
+                UI/UX DESIGN<br />
+                UX RESEARCH<br />
+              </p>
+              <h2 class="pad-y-50">DATE</h2>
+              <p>JAN 5, 2025</p>
+            </div>
+            <div class="hero-col-2 max-width-50 pad-x-300">
+              <img
+                src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733891012/mockup_carto_asgiat.png"
+                alt="mobile screen"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="scroll_down">
+          <p>SCROLL</p>
+        </div>
+      </header>
+
+      <div class="hero-section">
+        <!-- Final products -->
+        <iframe
+          class="figma"
+          height="80%"
+          src="https://embed.figma.com/proto/2SuziwDUInGpQXAtXGr7ip/Metro-map-expanse?embed-host=figma-embed-docs&node-id=257-1095&t=xDPnDllIMjEcgNKw-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=257%3A1095&show-proto-sidebar=0"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!--goals-->
+
+      <div class="hero-section" style="background-color: white">
+        <div
+          class="hero-content flex-row-wrap flex-justify-center margin-left-250 pad-y-500"
+        >
+          <div
+            class="hero-col-1 pad-y-100 flex-column-wrap flex-align-end text-align-right width-30 pad-x-300"
+          >
+            <h1 style="color: black">Goal</h1>
+          </div>
+
+          <p
+            class="hero-col-2 width-50 font-125 pad-x-300 pad-y-100"
+            style="color: black"
+          >
+            What If Spotify Made Sense is a just-for-fun UX redesign where I reimagined how music 
+            browsing could feel with clearer structure and fewer mental speed bumps. 
+            With no client constraints, I focused on information hierarchy, layout, 
+            and interactions that feel intuitive, calm, and enjoyable as a listener. 
+            This isn’t an official Spotify project, and it's not perfect. It's just a personal exploration of how a 
+            familiar product might feel a little more thoughtful and a little more fun to use.
+          </p>
+
+          <div
+            class="hero-col-1 pad-y-100 flex-column-wrap flex-align-end text-align-right width-30 pad-x-300"
+          >
+            <h1 style="color: black">Core features</h1>
+          </div>
+
+          <p
+            class="hero-col-2 width-50 pad-y-100 font-125 pad-x-300"
+            style="color: black"
+          >
+            1. Navigate seamlessly across the layers of any transit system.
+            <br />
+            2. Real-time updates about obstacles<br />
+            3. Offline functionality – access that navigation anywhere<br />
+          </p>
+        </div>
+      </div>
+
+      <div id="scroll_down">
+        <p>SCROLL</p>
+      </div>
+
+      <!--Research and Discovery-->
+      <div class="hero-section" style="background-color: white">
+        <div
+          class="hero-content flex-row-wrap flex-justify-center margin-left-250"
+        >
+          <div
+            class="hero-col-1 flex-column-wrap flex-align-end text-align-right max-width-30 pad-x-300"
+          >
+            <h1 style="color: black">In the beginning</h1>
+          </div>
+
+          <p class="hero-col-2 max-width-50 pad-x-300" style="color: black">
+            In Spring 2024, I attended the
+            <a href="https://transitmappingsymposium.org/">
+              Transit Mapping Symposium in Abu Dhabi,</a
+            >
+            which welcomed mapmakers, designers, commissioners, academics, and
+            fans from across the world to discuss mapmaking strategies and
+            ethics. Panelists and speakers inspired me to think about transit
+            systems and how they exist only in so far as they are represented by
+            maps.
+            <br />
+
+            There were some questions left unanswered by designers and scholars
+            at the conference: <br /><br />
+            1. How do we demonstrate complexity on dense networks? <br />
+            2. How can we better address stations and hubs, where painpoints are
+            concentrated?
+            <br />
+            3. How do we create more coherent signage and iconography to
+            represent the continuity of lines and stations?
+          </p>
+        </div>
+      </div>
+
+      <div id="faded-circle" class="hero-section">
+        <p
+          class="hero-col-1 flex-column-wrap flex-align-end text-align-right max-width-30 pad-x-300"
+        >
+          I also conducted a competitive analysis of existing transit
+          applications, and then I performed <a href="https://docs.google.com/document/d/1TPXmv4zxlwqxFHriV8CO9O-RfQx3MchiU_NBno2N8Dc/edit?usp=sharing"> a heuristic evaluation</a> on the most
+          direct competitor. <br />
+        </p>
+
+        <!-- Photo Grid -->
+        <div class="photo_row">
+          <div class="photo_column">
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733890618/union-square-station_nnw1d3.jpg"
+              style="width: 100%"
+              class="grow"
+            />
+          </div>
+          <div class="photo_column">
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1734552996/line_overview_oj60vv.png"
+              class="grow"
+            />
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1734552961/line_map_draft_zd1b1y.jpg"
+              class="grow"
+            />
+          </div>
+          <div class="photo_column">
+            <img
+              src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1734552741/map_overview_aa20px.png"
+              class="grow"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Process -->
+
+      <div id="faded-circle" class="hero-section">
+        <h1 class="title-text">
+          Process <br />
+          people to thing
+        </h1>
+      </div>
+
+      <!-- User research -->
+
+      <div
+        class="hero-section"
+        style="
+          background-color: white;
+          background-image: url(https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1735594368/user_research_gjpzhf.png);
+        "
+      >
+        <div
+          class="hero-content flex-row-wrap flex-justify-center margin-left-250"
+        >
+          <div class="hero-col-1 max-width-30">
+            <h1 style="color: black">Concept Discovery Interviews</h1>
+
+            <p style="color: black">
+              To kick it off, I formalized early conversations around public
+              transit, hoping to find a place to intervene as a designer. I had
+              15 short interviews with people from medium cities, like Madison
+              and Tampa, and big cities like New York, Mumbai, and Dubai. From
+              these interviews, I extracted pain points and mapped their transit
+              preference to different topics they cared about. The idea for a
+              map integration app emerged from two themes. A common theme was
+              complexity - several people described feeling stressed
+              interpreting static maps. A friction point is navigating transfers
+              and service disruptions. A similar theme was the frustration with
+              offline navigation. People expressed a desire to feel in control
+              during long transits between cities or underground.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--personas-->
+
+      <div
+        class="photo_gallery hero-section"
+        style="background-color: white; color: black"
+      >
+        <!-- first persona -->
+        <div class="photo_row">
+          <h2 style="color: black">
+            Turning this research into two personas helped concentrate my
+            efforts on who Carto can best serve.
+          </h2>
+          <img
+            src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1735599222/carto_personas-01_cbdlsb.png"
+            style="width: 100%; padding: 0 10px"
+          />
+        </div>
+      </div>
+
+      <div
+        class="photo_gallery hero-section"
+        style="background-color: white; color: black"
+      >
+        <!-- second persona -->
+        <div class="photo_row">
+          <img
+            src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1735599224/carto_personas-02_mv4nst.png"
+            style="width: 100%; padding: 0 10px"
+          />
+        </div>
+      </div>
+
+      <div id="faded-circle" class="hero-section">
+        <h1 class="title-text">
+          “You can’t make things simple, <br />but you can help people manage
+          the complexity” <br />
+          – Don Norman
+        </h1>
+      </div>
+
+      <!--Opportunities-->
+
+      <div class="hero-section" style="background-color: white">
+        <div
+          class="hero-content flex-row-wrap flex-justify-center margin-left-250"
+        >
+          <div
+            class="hero-col-1 flex-column-wrap flex-align-end text-align-right max-width-30 pad-x-300"
+          >
+            <h1 style="color: black">Improvement Opportunities</h1>
+          </div>
+
+          <p class="hero-col-2 max-width-50 pad-x-300" style="color: black">
+            These helped me understand existing tools and identify opportunities
+            for improvement: pain points: how to easily find their route,
+            interpret the map, and manage unexpected obstacles.
+            <br />
+            2. Connect multiple views (station-level, route-level, city-wide).
+            <br />2. Focus on station navigation <br />
+            3. Offline map functionality, where users could still access key
+            route information without needing an active internet connection.
+          </p>
+        </div>
+      </div>
+
+      <!--user flows-->
+
+      <div
+        class="photo_gallery hero-section"
+        style="background-color: white; color: black"
+      >
+        <div class="photo_row">
+          <h2 style="color: black">
+            With user flows, I outlined the steps people can go through to
+            accomplish tasks in Carto, deciding what choices they could make and
+            what features they would encounter.
+          </h2>
+          <img
+            src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733708442/carto_user_flows_bhrj86.png"
+            style="width: 100%; padding: 0 10px"
+          />
+        </div>
+      </div>
+
+      <!--early mockups-->
+      <div
+        class="photo_gallery hero-section"
+        style="background-color: white; color: black"
+      >
+        <div class="photo_row">
+          <h2 style="color: black">
+            I then created low-fidelity mockups that would serve as early
+            iterations of these task flows.
+          </h2>
+          <img
+            src="https://res.cloudinary.com/dtxb76tmn/image/upload/f_auto/v1733890558/Untitled_Artwork_146_dguywy.png"
+            style="width: 80%; padding: 0 10px"
+          />
+        </div>
+      </div>
+
+      <!--UX research-->
+
+      <div class="hero-section" style="background-color: white">
+        <div
+          class="hero-content flex-row-wrap flex-justify-center margin-left-250"
+        >
+          <div
+            class="hero-col-1 flex-column-wrap flex-align-end text-align-right max-width-30 pad-x-300"
+          >
+            <h1 style="color: black">Usability Testing</h1>
+          </div>
+
+          <div class="hero-col-2 max-width-50 pad-x-300">
+            <h2 style="color: black">Task-based studies:</h2>
+            <p style="color: black">
+              Have people chart their own route using a starting point and
+              destination I provide. The study consisted of 6 users tasked with finding a map of their transit map, finding a starting station, and navigating to the end using a demo of Carto. 
+              At the end, they were presented with a <a href="https://docs.google.com/forms/d/e/1FAIpQLScAL2PpOkwNwWnLRqANkqsXGwApv1qwvAy8n8l_qNZojKJhPA/viewform?usp=header">feedback form that included an industry standard System Usability Scale.</a>
+              
+            </p>
+            <h2 style="color: black">Major finding</h2>
+            <p style="color: black">
+              Users know their starting point, but they need to be able
+              to find it: Before running the test, I eliminated the search function - thinking that a live location 
+              update or search feature might ruin the experience by forcing the user to rely on GPS data. 
+              The first three test participants found the start of the workflow to be the greatest pain point, since they had to pinch and zoom to find their starting station.
+              I added the search feature to see how it would change impressions. The start of the workflow dropped as a sticking point, and overall impressions of the workflow rose dramatically. Findings like this and how they informed my prototype can be found in my <a href="https://docs.google.com/document/d/1oYfLKa3eoClFovGLTiHo15rmC3gzuAaE7ODcM144v_A/edit?usp=sharing">Results Analysis</a>.
+             
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--takeaways-->
+
+      <div class="hero-section">
+        <div
+          class="hero-content flex-row-wrap flex-justify-center margin-left-250"
+        >
+          <div
+            class="hero-col-1 flex-column-wrap flex-align-end text-align-right max-width-30 pad-x-300"
+          >
+            <h1>Takeaways</h1>
+          </div>
+
+          <div class="hero-col-2 max-width-50 pad-x-300">
+            <h2>Divide up tasks:</h2>
+
+            <p>
+              I made so many mistakes at the beginning because I had my eye on
+              the end goal. A common failure in usability studies is using
+              research to validate hypotheses, rather than to hear open
+              feedback. Learning to divide up steps and structure the process
+              allowed me to listen and design better.
+            </p>
+            <h2>Accesssibility in UX:</h2>
+
+            <p>
+              I chose the Paris metro map for my prototype because I'm a cheater. In designing <a href="https://metromap.fr/fr">the Paris metro map</a>, Constantine Konovalov
+              knew about the importance of accessibility - and around high contrast and legibility. Decisions he made in his sketch proposals didn't just improve the experience for users with different cognitive and visual needs - they made transit easier to navigate
+              for all users, boosting confidence in wayfinding. By starting my design with lessons from his maps, I started with accessibility principles in the app's branding, color scheme, and text legibility. Hopefully, Carto is more intuitive, equitable, and effective because of it.
+            </p>
+            <h2>Documentation:</h2>
+
+            <p>
+              Effective documentation through wireframes, journey maps,
+              personas, and design systems, is essential for aligning a project
+              and communicating to stakeholders. As I embark to improve my UX
+              design skills, documenting discrete steps also allows me to track
+              my own progression and achievements. As I continue to iterate on
+              this project, keeping structured documentation with data and
+              prototypes will ensure a thoughtful and joyful user experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--include script.js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../js/port_script.js"></script>
+  </body>
+</html>
